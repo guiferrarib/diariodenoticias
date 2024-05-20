@@ -68,6 +68,8 @@ struct AppBar: View {
 struct ArticleItemView: View {
     var article: Article
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             AsyncImage(url: URL(string: article.imageUrl)) { phase in
@@ -90,7 +92,7 @@ struct ArticleItemView: View {
                 .foregroundColor(.gray)
         }
         .padding(16)
-        .background(Color.white)
+        .background(colorScheme == .dark ? Color(UIColor.darkGray) : Color.white)
         .cornerRadius(8)
         .shadow(color: .gray.opacity(0.5), radius: 8, x: 0, y: 2)
         .padding(.horizontal, 16)
