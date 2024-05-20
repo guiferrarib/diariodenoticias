@@ -2,8 +2,8 @@ package com.ia.diariodenoticias.articles.data.impl
 
 import com.ia.diariodenoticias.articles.data.ArticlesDataSource
 import com.ia.diariodenoticias.articles.data.model.ArticleRaw
-import com.ia.diariodenoticias.articles.data.ArticlesRepository
-import com.ia.diariodenoticias.articles.data.service.ArticlesService
+import com.ia.diariodenoticias.articles.domain.ArticlesRepository
+
 /**
  * Copyright (c) 2024
  * Todos os direitos reservados.

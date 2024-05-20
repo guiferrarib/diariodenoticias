@@ -1,4 +1,4 @@
-package com.ia.diariodenoticias.articles.data
+package com.ia.diariodenoticias.articles.domain
 
 import com.ia.diariodenoticias.articles.data.model.ArticleRaw
 

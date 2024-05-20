@@ -1,7 +1,7 @@
 package com.ia.diariodenoticias.articles.presentation.di
 
 import com.ia.diariodenoticias.articles.data.ArticlesDataSource
-import com.ia.diariodenoticias.articles.data.ArticlesRepository
+import com.ia.diariodenoticias.articles.domain.ArticlesRepository
 import com.ia.diariodenoticias.articles.data.impl.ArticlesDataSourceImpl
 import com.ia.diariodenoticias.articles.data.impl.ArticlesRepositoryImpl
 import com.ia.diariodenoticias.articles.data.service.ArticlesService

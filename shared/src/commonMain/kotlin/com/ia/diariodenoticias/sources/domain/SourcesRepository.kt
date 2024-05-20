@@ -1,4 +1,4 @@
-package com.ia.diariodenoticias.sources.data
+package com.ia.diariodenoticias.sources.domain
 
 import com.ia.diariodenoticias.sources.data.model.SourceRaw
 

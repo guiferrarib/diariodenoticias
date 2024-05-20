@@ -26,7 +26,7 @@
     <ID>NewLineAtEndOfFile:ArticlesIntegrationTest.kt$com.ia.diariodenoticias.articles.app.ArticlesIntegrationTest.kt</ID>
     <ID>NewLineAtEndOfFile:ArticlesMapper.kt$com.ia.diariodenoticias.utils.ArticlesMapper.kt</ID>
     <ID>NewLineAtEndOfFile:ArticlesModule.kt$com.ia.diariodenoticias.articles.presentation.di.ArticlesModule.kt</ID>
-    <ID>NewLineAtEndOfFile:ArticlesRepository.kt$com.ia.diariodenoticias.articles.data.ArticlesRepository.kt</ID>
+    <ID>NewLineAtEndOfFile:ArticlesRepository.kt$com.ia.diariodenoticias.articles.domain.ArticlesRepository.kt</ID>
     <ID>NewLineAtEndOfFile:ArticlesRepositoryImpl.kt$com.ia.diariodenoticias.articles.data.impl.ArticlesRepositoryImpl.kt</ID>
     <ID>NewLineAtEndOfFile:ArticlesRepositoryTest.kt$com.ia.diariodenoticias.articles.data.ArticlesRepositoryTest.kt</ID>
     <ID>NewLineAtEndOfFile:ArticlesResponse.kt$com.ia.diariodenoticias.articles.data.model.ArticlesResponse.kt</ID>
@@ -54,7 +54,7 @@
     <ID>NewLineAtEndOfFile:SourcesDataSource.kt$com.ia.diariodenoticias.sources.data.SourcesDataSource.kt</ID>
     <ID>NewLineAtEndOfFile:SourcesIntegrationTest.kt$com.ia.diariodenoticias.sources.app.SourcesIntegrationTest.kt</ID>
     <ID>NewLineAtEndOfFile:SourcesMapper.kt$com.ia.diariodenoticias.utils.SourcesMapper.kt</ID>
-    <ID>NewLineAtEndOfFile:SourcesRepository.kt$com.ia.diariodenoticias.sources.data.SourcesRepository.kt</ID>
+    <ID>NewLineAtEndOfFile:SourcesRepository.kt$com.ia.diariodenoticias.sources.domain.SourcesRepository.kt</ID>
     <ID>NewLineAtEndOfFile:SourcesRepositoryImpl.kt$com.ia.diariodenoticias.sources.data.impl.SourcesRepositoryImpl.kt</ID>
     <ID>NewLineAtEndOfFile:SourcesRepositoryTest.kt$com.ia.diariodenoticias.sources.data.SourcesRepositoryTest.kt</ID>
     <ID>NewLineAtEndOfFile:SourcesResponse.kt$com.ia.diariodenoticias.sources.data.model.SourcesResponse.kt</ID>

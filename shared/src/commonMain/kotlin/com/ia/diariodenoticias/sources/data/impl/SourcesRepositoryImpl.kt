@@ -1,9 +1,9 @@
 package com.ia.diariodenoticias.sources.data.impl
 
 import com.ia.diariodenoticias.sources.data.SourcesDataSource
-import com.ia.diariodenoticias.sources.data.SourcesRepository
+import com.ia.diariodenoticias.sources.domain.SourcesRepository
 import com.ia.diariodenoticias.sources.data.model.SourceRaw
-import com.ia.diariodenoticias.sources.data.service.SourcesService
+
 /**
  * Copyright (c) 2024
  * Todos os direitos reservados.

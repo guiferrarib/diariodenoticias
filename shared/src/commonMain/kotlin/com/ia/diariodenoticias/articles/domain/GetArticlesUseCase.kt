@@ -1,6 +1,5 @@
 package com.ia.diariodenoticias.articles.domain
 
-import com.ia.diariodenoticias.articles.data.ArticlesRepository
 import com.ia.diariodenoticias.articles.data.model.ArticleRaw
 import kotlinx.datetime.Clock
 import kotlinx.datetime.Instant

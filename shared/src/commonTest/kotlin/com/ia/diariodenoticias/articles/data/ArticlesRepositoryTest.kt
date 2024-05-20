@@ -2,6 +2,7 @@ package com.ia.diariodenoticias.articles.data
 
 import com.ia.diariodenoticias.articles.data.impl.ArticlesRepositoryImpl
 import com.ia.diariodenoticias.articles.data.model.ArticleRaw
+import com.ia.diariodenoticias.articles.domain.ArticlesRepository
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.plugins.contentnegotiation.*

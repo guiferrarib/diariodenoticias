@@ -2,6 +2,7 @@ package com.ia.diariodenoticias.sources.data
 
 import com.ia.diariodenoticias.sources.data.impl.SourcesRepositoryImpl
 import com.ia.diariodenoticias.sources.data.model.SourceRaw
+import com.ia.diariodenoticias.sources.domain.SourcesRepository
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.plugins.contentnegotiation.*

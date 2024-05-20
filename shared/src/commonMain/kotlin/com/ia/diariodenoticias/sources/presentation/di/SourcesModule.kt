@@ -1,7 +1,7 @@
 package com.ia.diariodenoticias.sources.presentation.di
 
 import com.ia.diariodenoticias.sources.data.SourcesDataSource
-import com.ia.diariodenoticias.sources.data.SourcesRepository
+import com.ia.diariodenoticias.sources.domain.SourcesRepository
 import org.koin.dsl.module
 import com.ia.diariodenoticias.sources.data.impl.SourcesDataSourceImpl
 import com.ia.diariodenoticias.sources.data.impl.SourcesRepositoryImpl

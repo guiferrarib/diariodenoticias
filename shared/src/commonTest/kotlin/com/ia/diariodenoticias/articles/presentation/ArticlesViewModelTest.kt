@@ -2,7 +2,7 @@ package com.ia.diariodenoticias.articles.presentation
 
 import app.cash.turbine.test
 import app.cash.turbine.turbineScope
-import com.ia.diariodenoticias.articles.data.ArticlesRepository
+import com.ia.diariodenoticias.articles.domain.ArticlesRepository
 import com.ia.diariodenoticias.articles.data.model.ArticleRaw
 import com.ia.diariodenoticias.articles.domain.GetArticlesUseCase
 import com.ia.diariodenoticias.utils.mapArticles

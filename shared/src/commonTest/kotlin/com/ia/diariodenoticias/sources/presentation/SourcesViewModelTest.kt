@@ -2,7 +2,7 @@ package com.ia.diariodenoticias.sources.presentation
 
 import app.cash.turbine.test
 import app.cash.turbine.turbineScope
-import com.ia.diariodenoticias.sources.data.SourcesRepository
+import com.ia.diariodenoticias.sources.domain.SourcesRepository
 import com.ia.diariodenoticias.sources.data.model.SourceRaw
 import com.ia.diariodenoticias.sources.domain.GetSourcesUseCase
 import com.ia.diariodenoticias.sources.domain.Source
