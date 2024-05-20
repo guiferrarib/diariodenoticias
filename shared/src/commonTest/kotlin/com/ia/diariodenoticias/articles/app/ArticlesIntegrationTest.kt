@@ -1,6 +1,7 @@
 package com.ia.diariodenoticias.articles.app
 
 import app.cash.turbine.test
+import com.ia.diariodenoticias.app.di.sharedKoinModules
 import com.ia.diariodenoticias.articles.data.ArticlesDataSource
 import com.ia.diariodenoticias.articles.data.ArticlesRepository
 import com.ia.diariodenoticias.articles.data.impl.ArticlesDataSourceImpl
@@ -16,6 +17,8 @@ import com.ia.diariodenoticias.testDbDriver
 import com.ia.diariodenoticias.utils.JsonLoader
 import com.ia.diariodenoticias.utils.MockClient
 import com.ia.diariodenoticias.utils.MockResponse
+import com.ia.diariodenoticias.utils.di.stopTestKoin
+import com.ia.diariodenoticias.utils.di.testPlatformModule
 import com.ia.diariodenoticias.utils.mapArticles
 import com.ia.diariodenoticias.utils.testKtorClient
 import io.ktor.http.HttpStatusCode
@@ -50,7 +53,7 @@ class ArticlesIntegrationTest : KoinTest {
 
     private val localDataSource: ArticlesDataSource by inject()
 
-    private val mockClient = MockClient()
+    private val mockClient: MockClient by inject()
 
 
     @OptIn(ExperimentalCoroutinesApi::class)
@@ -58,14 +61,7 @@ class ArticlesIntegrationTest : KoinTest {
     fun setUp() {
         startKoin {
             modules(
-                module {
-                    single<DiarioDeNoticiasDatabase> { DiarioDeNoticiasDatabase(testDbDriver()) }
-                    single<ArticlesService> { ArticlesService(testKtorClient(mockClient)) }
-                    single<ArticlesDataSource> { ArticlesDataSourceImpl(get(), get()) }
-                    single<ArticlesRepository> { ArticlesRepositoryImpl(get()) }
-                    single { GetArticlesUseCase(get()) }
-                    single { ArticlesViewModel(get()) }
-                }
+                testPlatformModule + sharedKoinModules
             )
         }
         Dispatchers.setMain(dispatcherProvider)
@@ -74,7 +70,7 @@ class ArticlesIntegrationTest : KoinTest {
     @OptIn(ExperimentalCoroutinesApi::class)
     @AfterTest
     fun tearDown() {
-        stopKoin()
+        stopTestKoin()
         Dispatchers.resetMain() // reset Main dispatcher to the original Main dispatcher
         dispatcherProvider.cancel()
     }

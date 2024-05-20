@@ -1,4 +1,4 @@
-package com.ia.diariodenoticias.android.screens
+package com.ia.diariodenoticias.android.screens.articles
 
 
 import androidx.compose.foundation.layout.Box

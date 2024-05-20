@@ -1,6 +1,7 @@
 package com.ia.diariodenoticias.sources.app
 
 import app.cash.turbine.test
+import com.ia.diariodenoticias.app.di.sharedKoinModules
 import com.ia.diariodenoticias.db.DiarioDeNoticiasDatabase
 import com.ia.diariodenoticias.sources.data.SourcesDataSource
 import com.ia.diariodenoticias.sources.data.SourcesRepository
@@ -16,6 +17,8 @@ import com.ia.diariodenoticias.testDbDriver
 import com.ia.diariodenoticias.utils.JsonLoader
 import com.ia.diariodenoticias.utils.MockClient
 import com.ia.diariodenoticias.utils.MockResponse
+import com.ia.diariodenoticias.utils.di.stopTestKoin
+import com.ia.diariodenoticias.utils.di.testPlatformModule
 import com.ia.diariodenoticias.utils.mapSources
 import com.ia.diariodenoticias.utils.testKtorClient
 import io.ktor.http.HttpStatusCode
@@ -50,7 +53,7 @@ class SourcesIntegrationTest : KoinTest {
 
     private val localDataSource: SourcesDataSource by inject()
 
-    private val mockClient = MockClient()
+    private val mockClient: MockClient by inject()
 
 
     @OptIn(ExperimentalCoroutinesApi::class)
@@ -58,14 +61,7 @@ class SourcesIntegrationTest : KoinTest {
     fun setUp() {
         startKoin {
             modules(
-                module {
-                    single<DiarioDeNoticiasDatabase> { DiarioDeNoticiasDatabase(testDbDriver()) }
-                    single<SourcesService> { SourcesService(testKtorClient(mockClient)) }
-                    single<SourcesDataSource> { SourcesDataSourceImpl(get(), get()) }
-                    single<SourcesRepository> { SourcesRepositoryImpl(get()) }
-                    single { GetSourcesUseCase(get()) }
-                    single { SourcesViewModel(get()) }
-                }
+                testPlatformModule + sharedKoinModules
             )
         }
         Dispatchers.setMain(dispatcherProvider)
@@ -74,7 +70,7 @@ class SourcesIntegrationTest : KoinTest {
     @OptIn(ExperimentalCoroutinesApi::class)
     @AfterTest
     fun tearDown() {
-        stopKoin()
+        stopTestKoin()
         Dispatchers.resetMain() // reset Main dispatcher to the original Main dispatcher
         dispatcherProvider.cancel()
     }

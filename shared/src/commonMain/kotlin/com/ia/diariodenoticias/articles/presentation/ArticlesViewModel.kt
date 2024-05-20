@@ -34,7 +34,4 @@ class ArticlesViewModel(
             _articlesState.emit(ArticlesState(articles = fetchedArticles))
         }
     }
-
-
-
 }

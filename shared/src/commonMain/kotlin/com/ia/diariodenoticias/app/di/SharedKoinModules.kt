@@ -10,6 +10,5 @@ import com.ia.diariodenoticias.sources.presentation.di.sourcesModule
  */
 val sharedKoinModules = listOf(
     articlesModule,
-    sourcesModule,
-    networkModule,
+    sourcesModule
 )

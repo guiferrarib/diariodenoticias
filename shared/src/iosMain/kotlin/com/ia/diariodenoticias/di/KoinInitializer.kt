@@ -1,5 +1,6 @@
 package com.ia.diariodenoticias.di
 
+import com.ia.diariodenoticias.app.di.networkModule
 import com.ia.diariodenoticias.app.di.sharedKoinModules
 import com.ia.diariodenoticias.articles.presentation.ArticlesViewModel
 import com.ia.diariodenoticias.di.databaseModule
@@ -16,7 +17,7 @@ import org.koin.core.context.startKoin
 
 fun initKoin() {
 
-    val modules = sharedKoinModules + databaseModule
+    val modules = sharedKoinModules + databaseModule + networkModule
 
     startKoin {
         modules(modules)

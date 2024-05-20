@@ -9,10 +9,10 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.ia.diariodenoticias.android.screens.AboutScreen
-import com.ia.diariodenoticias.android.screens.ArticlesScreen
+import com.ia.diariodenoticias.android.screens.articles.AboutScreen
+import com.ia.diariodenoticias.android.screens.articles.ArticlesScreen
 import com.ia.diariodenoticias.android.screens.Screens
-import com.ia.diariodenoticias.android.screens.SourcesScreen
+import com.ia.diariodenoticias.android.screens.sources.SourcesScreen
 /**
  * Copyright (c) 2024
  * Todos os direitos reservados.

@@ -3,9 +3,12 @@ package com.ia.diariodenoticias.android
 import android.app.Application
 import com.ia.diariodenoticias.android.di.databaseModule
 import com.ia.diariodenoticias.android.di.viewModelsModule
+import com.ia.diariodenoticias.app.di.networkModule
 import com.ia.diariodenoticias.app.di.sharedKoinModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
+import org.koin.core.module.plus
+
 /**
  * Copyright (c) 2024
  * Todos os direitos reservados.
@@ -21,7 +24,7 @@ class DiaryApp : Application() {
     }
 
     private fun initKoin() {
-        val modules = sharedKoinModules + viewModelsModule + databaseModule
+        val modules = sharedKoinModules + networkModule + viewModelsModule + databaseModule
 
         startKoin {
             androidContext(this@DiaryApp)

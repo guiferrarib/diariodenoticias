@@ -12,7 +12,6 @@ import org.koin.dsl.module
  */
 
 val viewModelsModule = module {
-
     viewModel { ArticlesViewModel(get()) }
     viewModel { SourcesViewModel(get()) }
 }
