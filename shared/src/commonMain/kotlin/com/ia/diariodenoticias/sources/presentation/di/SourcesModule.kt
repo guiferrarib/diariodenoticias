@@ -6,7 +6,7 @@ import org.koin.dsl.module
 import com.ia.diariodenoticias.sources.data.impl.SourcesDataSourceImpl
 import com.ia.diariodenoticias.sources.data.impl.SourcesRepositoryImpl
 import com.ia.diariodenoticias.sources.data.service.SourcesService
-import com.ia.diariodenoticias.sources.usecase.GetSourcesUseCase
+import com.ia.diariodenoticias.sources.domain.GetSourcesUseCase
 import com.ia.diariodenoticias.sources.presentation.SourcesViewModel
 /**
  * Copyright (c) 2024

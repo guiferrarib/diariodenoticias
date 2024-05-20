@@ -25,7 +25,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.ia.diariodenoticias.android.screens.articles.ErrorMessage
-import com.ia.diariodenoticias.sources.usecase.Source
+import com.ia.diariodenoticias.sources.domain.Source
 import com.ia.diariodenoticias.sources.presentation.SourcesViewModel
 import org.koin.androidx.compose.koinViewModel
 /**

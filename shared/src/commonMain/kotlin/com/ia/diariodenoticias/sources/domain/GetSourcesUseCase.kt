@@ -1,4 +1,4 @@
-package com.ia.diariodenoticias.sources.usecase
+package com.ia.diariodenoticias.sources.domain
 
 import com.ia.diariodenoticias.sources.data.SourcesRepository
 import com.ia.diariodenoticias.sources.data.model.SourceRaw

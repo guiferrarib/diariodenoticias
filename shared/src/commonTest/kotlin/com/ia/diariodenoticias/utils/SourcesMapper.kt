@@ -1,7 +1,7 @@
 package com.ia.diariodenoticias.utils
 
 import com.ia.diariodenoticias.sources.data.model.SourceRaw
-import com.ia.diariodenoticias.sources.usecase.Source
+import com.ia.diariodenoticias.sources.domain.Source
 
 /**
  * Copyright (c) 2024 AngelLira

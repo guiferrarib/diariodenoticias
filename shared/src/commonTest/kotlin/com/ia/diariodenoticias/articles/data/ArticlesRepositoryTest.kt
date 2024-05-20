@@ -1,19 +1,7 @@
 package com.ia.diariodenoticias.articles.data
 
-import app.cash.turbine.test
-import app.cash.turbine.turbineScope
-import com.ia.diariodenoticias.articles.data.impl.ArticlesDataSourceImpl
 import com.ia.diariodenoticias.articles.data.impl.ArticlesRepositoryImpl
 import com.ia.diariodenoticias.articles.data.model.ArticleRaw
-import com.ia.diariodenoticias.articles.data.service.ArticlesService
-import com.ia.diariodenoticias.articles.presentation.ArticlesState
-import com.ia.diariodenoticias.articles.presentation.ArticlesViewModel
-import com.ia.diariodenoticias.articles.usecase.Article
-import com.ia.diariodenoticias.articles.usecase.GetArticlesUseCase
-import dev.mokkery.answering.returns
-import dev.mokkery.everySuspend
-import dev.mokkery.matcher.any
-import dev.mokkery.mock
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.plugins.contentnegotiation.*
@@ -30,18 +18,15 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.resetMain
-import kotlinx.coroutines.test.runTest
 import kotlinx.coroutines.test.setMain
 import org.koin.core.context.startKoin
 import org.koin.core.context.stopKoin
 import org.koin.dsl.module
 import org.koin.test.KoinTest
-import org.koin.test.inject
 import kotlin.test.AfterTest
 import kotlin.test.BeforeTest
 import kotlin.test.Test
 import kotlin.test.assertEquals
-import kotlin.test.assertFails
 import kotlin.test.assertNotEquals
 
 /**

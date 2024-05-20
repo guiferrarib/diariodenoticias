@@ -1,4 +1,4 @@
-package com.ia.diariodenoticias.sources.usecase
+package com.ia.diariodenoticias.sources.domain
 /**
  * Copyright (c) 2024
  * Todos os direitos reservados.

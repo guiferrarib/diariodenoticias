@@ -5,7 +5,7 @@ import com.ia.diariodenoticias.articles.data.ArticlesRepository
 import com.ia.diariodenoticias.articles.data.impl.ArticlesDataSourceImpl
 import com.ia.diariodenoticias.articles.data.impl.ArticlesRepositoryImpl
 import com.ia.diariodenoticias.articles.data.service.ArticlesService
-import com.ia.diariodenoticias.articles.usecase.GetArticlesUseCase
+import com.ia.diariodenoticias.articles.domain.GetArticlesUseCase
 import com.ia.diariodenoticias.articles.presentation.ArticlesViewModel
 import org.koin.dsl.module
 /**

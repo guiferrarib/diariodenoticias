@@ -1,4 +1,4 @@
-package com.ia.diariodenoticias.articles.usecase
+package com.ia.diariodenoticias.articles.domain
 
 data class Article(
     val title: String,

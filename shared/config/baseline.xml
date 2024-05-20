@@ -19,7 +19,7 @@
     <ID>NewLineAtEndOfFile:ApiKeyProvider.android.kt$com.ia.diariodenoticias.app.utils.ApiKeyProvider.android.kt</ID>
     <ID>NewLineAtEndOfFile:ApiKeyProvider.ios.kt$com.ia.diariodenoticias.app.utils.ApiKeyProvider.ios.kt</ID>
     <ID>NewLineAtEndOfFile:ApiKeyProvider.kt$com.ia.diariodenoticias.app.utils.ApiKeyProvider.kt</ID>
-    <ID>NewLineAtEndOfFile:Article.kt$com.ia.diariodenoticias.articles.usecase.Article.kt</ID>
+    <ID>NewLineAtEndOfFile:Article.kt$com.ia.diariodenoticias.articles.domain.Article.kt</ID>
     <ID>NewLineAtEndOfFile:ArticleRaw.kt$com.ia.diariodenoticias.articles.data.model.ArticleRaw.kt</ID>
     <ID>NewLineAtEndOfFile:ArticlesDataSource.kt$com.ia.diariodenoticias.articles.data.ArticlesDataSource.kt</ID>
     <ID>NewLineAtEndOfFile:ArticlesDataSourceImpl.kt$com.ia.diariodenoticias.articles.data.impl.ArticlesDataSourceImpl.kt</ID>
@@ -35,8 +35,8 @@
     <ID>NewLineAtEndOfFile:BaseViewModel.kt$com.ia.diariodenoticias.app.BaseViewModel.kt</ID>
     <ID>NewLineAtEndOfFile:DatabaseDriverFactory.kt$com.ia.diariodenoticias.app.db.DatabaseDriverFactory.kt</ID>
     <ID>NewLineAtEndOfFile:DatabaseModule.kt$com.ia.diariodenoticias.di.DatabaseModule.kt</ID>
-    <ID>NewLineAtEndOfFile:GetArticlesUseCase.kt$com.ia.diariodenoticias.articles.usecase.GetArticlesUseCase.kt</ID>
-    <ID>NewLineAtEndOfFile:GetSourcesUseCase.kt$com.ia.diariodenoticias.sources.usecase.GetSourcesUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:GetArticlesUseCase.kt$com.ia.diariodenoticias.articles.domain.GetArticlesUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:GetSourcesUseCase.kt$com.ia.diariodenoticias.sources.domain.GetSourcesUseCase.kt</ID>
     <ID>NewLineAtEndOfFile:Greeting.kt$com.ia.diariodenoticias.Greeting.kt</ID>
     <ID>NewLineAtEndOfFile:JsonLoader.kt$com.ia.diariodenoticias.utils.JsonLoader.kt</ID>
     <ID>NewLineAtEndOfFile:KoinInitializer.kt$com.ia.diariodenoticias.di.KoinInitializer.kt</ID>
@@ -49,7 +49,7 @@
     <ID>NewLineAtEndOfFile:Platform.kt$com.ia.diariodenoticias.Platform.kt</ID>
     <ID>NewLineAtEndOfFile:ResponseInterceptor.kt$com.ia.diariodenoticias.utils.ResponseInterceptor.kt</ID>
     <ID>NewLineAtEndOfFile:SharedKoinModules.kt$com.ia.diariodenoticias.app.di.SharedKoinModules.kt</ID>
-    <ID>NewLineAtEndOfFile:Source.kt$com.ia.diariodenoticias.sources.usecase.Source.kt</ID>
+    <ID>NewLineAtEndOfFile:Source.kt$com.ia.diariodenoticias.sources.domain.Source.kt</ID>
     <ID>NewLineAtEndOfFile:SourceRaw.kt$com.ia.diariodenoticias.sources.data.model.SourceRaw.kt</ID>
     <ID>NewLineAtEndOfFile:SourcesDataSource.kt$com.ia.diariodenoticias.sources.data.SourcesDataSource.kt</ID>
     <ID>NewLineAtEndOfFile:SourcesIntegrationTest.kt$com.ia.diariodenoticias.sources.app.SourcesIntegrationTest.kt</ID>

@@ -2,25 +2,17 @@ package com.ia.diariodenoticias.sources.app
 
 import app.cash.turbine.test
 import com.ia.diariodenoticias.app.di.sharedKoinModules
-import com.ia.diariodenoticias.db.DiarioDeNoticiasDatabase
 import com.ia.diariodenoticias.sources.data.SourcesDataSource
-import com.ia.diariodenoticias.sources.data.SourcesRepository
-import com.ia.diariodenoticias.sources.data.impl.SourcesDataSourceImpl
-import com.ia.diariodenoticias.sources.data.impl.SourcesRepositoryImpl
 import com.ia.diariodenoticias.sources.data.model.SourcesResponse
-import com.ia.diariodenoticias.sources.data.service.SourcesService
 import com.ia.diariodenoticias.sources.presentation.SourcesState
 import com.ia.diariodenoticias.sources.presentation.SourcesViewModel
-import com.ia.diariodenoticias.sources.usecase.GetSourcesUseCase
-import com.ia.diariodenoticias.sources.usecase.Source
-import com.ia.diariodenoticias.testDbDriver
+import com.ia.diariodenoticias.sources.domain.Source
 import com.ia.diariodenoticias.utils.JsonLoader
 import com.ia.diariodenoticias.utils.MockClient
 import com.ia.diariodenoticias.utils.MockResponse
 import com.ia.diariodenoticias.utils.di.stopTestKoin
 import com.ia.diariodenoticias.utils.di.testPlatformModule
 import com.ia.diariodenoticias.utils.mapSources
-import com.ia.diariodenoticias.utils.testKtorClient
 import io.ktor.http.HttpStatusCode
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -32,8 +24,6 @@ import kotlinx.coroutines.test.setMain
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import org.koin.core.context.startKoin
-import org.koin.core.context.stopKoin
-import org.koin.dsl.module
 import org.koin.test.KoinTest
 import org.koin.test.inject
 import kotlin.test.AfterTest

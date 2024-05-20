@@ -1,7 +1,7 @@
 package com.ia.diariodenoticias.sources.presentation
 
 import com.ia.diariodenoticias.app.BaseViewModel
-import com.ia.diariodenoticias.sources.usecase.GetSourcesUseCase
+import com.ia.diariodenoticias.sources.domain.GetSourcesUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch

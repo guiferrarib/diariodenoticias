@@ -1,6 +1,6 @@
 package com.ia.diariodenoticias.articles.presentation
 
-import com.ia.diariodenoticias.articles.usecase.Article
+import com.ia.diariodenoticias.articles.domain.Article
 /**
  * Copyright (c) 2024
  * Todos os direitos reservados.

@@ -1,4 +1,4 @@
-package com.ia.diariodenoticias.articles.usecase
+package com.ia.diariodenoticias.articles.domain
 
 import com.ia.diariodenoticias.articles.data.ArticlesRepository
 import com.ia.diariodenoticias.articles.data.model.ArticleRaw
