@@ -1,7 +1,7 @@
 import io.gitlab.arturbosch.detekt.Detekt
 import io.gitlab.arturbosch.detekt.DetektCreateBaselineTask
 import kotlinx.kover.gradle.plugin.dsl.AggregationType
-import kotlinx.kover.gradle.plugin.dsl.MetricType
+import kotlinx.kover.gradle.plugin.dsl.CoverageUnit
 
 
 plugins {
@@ -134,23 +134,36 @@ android {
     }
 }
 
-koverReport {
-    verify {
-        rule("Basic Line Coverage") {
-            isEnabled = true
-            bound {
-                minValue = 80 // Minimum coverage percentage
-                maxValue = 100 // Maximum coverage percentage (optional)
-                metric = MetricType.LINE
-                aggregation = AggregationType.COVERED_PERCENTAGE
+kover {
+    reports {
+        filters {
+            excludes {
+                classes(
+                    "comiadiariodenoticiasdb.Source",
+                    "comiadiariodenoticiasdb.Article",
+                    "com.ia.diariodenoticias.app.db.DatabaseDriverFactory",
+                    "com.ia.diariodenoticias.BuildConfig",
+                )
             }
         }
+        verify {
+            rule("Basic Line Coverage") {
+                disabled = false
+                bound {
+                    minValue = 80 // Minimum coverage percentage
+                    maxValue = 100 // Maximum coverage percentage (optional)
+                    aggregationForGroup = AggregationType.COVERED_PERCENTAGE
+                    coverageUnits.set(CoverageUnit.LINE)
+                }
+            }
 
-        rule("Branch Coverage") {
-            isEnabled = true
-            bound {
-                minValue = 70 // Minimum coverage percentage for branches
-                metric = MetricType.BRANCH
+            rule("Branch Coverage") {
+                disabled = false
+                bound {
+                    minValue = 70 // Minimum coverage percentage for branches
+                    coverageUnits.set(CoverageUnit.BRANCH)
+                    aggregationForGroup = AggregationType.COVERED_PERCENTAGE
+                }
             }
         }
     }
@@ -169,7 +182,8 @@ detekt {
     buildUponDefaultConfig = true // preconfigure defaults
     allRules = true // activate all available (even unstable) rules.
     config.setFrom("$projectDir/config/detekt.yml") // point to your custom config defining rules to run, overwriting default behavior
-    baseline = file("$projectDir/config/baseline.xml") // a way of suppressing issues before introducing detekt
+    baseline =
+        file("$projectDir/config/baseline.xml") // a way of suppressing issues before introducing detekt
 }
 
 tasks.withType<Detekt>().configureEach {
