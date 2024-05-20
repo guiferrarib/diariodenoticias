@@ -1,4 +1,4 @@
-package com.ia.diariodenoticias.android.screens.articles
+package com.ia.diariodenoticias.android.screens.about
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize

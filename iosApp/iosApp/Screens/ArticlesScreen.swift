@@ -43,7 +43,7 @@ struct ArticlesScreen: View {
             
             if(!viewModel.articlesState.articles.isEmpty) {
                 ScrollView {
-                    LazyVStack(spacing: 10) {
+                    LazyVStack(spacing: 30) {
                         ForEach(viewModel.articlesState.articles, id: \.self) { article in
                             ArticleItemView(article: article)
                         }
@@ -71,8 +71,8 @@ struct ArticleItemView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             AsyncImage(url: URL(string: article.imageUrl)) { phase in
-                if phase.image != nil {
-                    phase.image!
+                if let image = phase.image {
+                    image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 } else if phase.error != nil {
@@ -85,9 +85,15 @@ struct ArticleItemView: View {
                 .font(.title)
                 .fontWeight(.bold)
             Text(article.desc)
-            Text(article.date).frame(maxWidth: .infinity, alignment: .trailing).foregroundStyle(.gray)
+            Text(article.date)
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .foregroundColor(.gray)
         }
         .padding(16)
+        .background(Color.white)
+        .cornerRadius(8)
+        .shadow(color: .gray.opacity(0.5), radius: 8, x: 0, y: 2)
+        .padding(.horizontal, 16)
     }
 }
 
