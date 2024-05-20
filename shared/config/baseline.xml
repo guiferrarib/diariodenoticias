@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>MatchingDeclarationName:Platform.android.kt$Platform</ID>
+    <ID>MatchingDeclarationName:Platform.ios.kt$Platform</ID>
+    <ID>MatchingDeclarationName:Test.android.kt$AndroidGreetingTest</ID>
+    <ID>MatchingDeclarationName:Test.ios.kt$IosGreetingTest</ID>
+    <ID>MatchingDeclarationName:Test.kt$CommonGreetingTest</ID>
+    <ID>MatchingDeclarationName:test.utils.kt$SharedFileReader</ID>
+    <ID>MatchingDeclarationName:utils.ios.kt$SharedFileReader</ID>
+    <ID>MaxLineLength:ArticlesMapper.kt$?:</ID>
+    <ID>MaxLineLength:ArticlesRepositoryTest.kt$ArticlesRepositoryTest$fun</ID>
+    <ID>MaxLineLength:GetArticlesUseCase.kt$GetArticlesUseCase$?:</ID>
+    <ID>MaxLineLength:SourcesRepositoryTest.kt$SourcesRepositoryTest$fun</ID>
+    <ID>MaxLineLength:build.gradle.kts$config.setFrom("$projectDir/config/detekt.yml")</ID>
+    <ID>MaxLineLength:build.gradle.kts$sarif.required.set(true)</ID>
+    <ID>MaxLineLength:build.gradle.kts$txt.required.set(true)</ID>
+    <ID>NewLineAtEndOfFile:ApiKeyProvider.android.kt$com.ia.diariodenoticias.app.utils.ApiKeyProvider.android.kt</ID>
+    <ID>NewLineAtEndOfFile:ApiKeyProvider.ios.kt$com.ia.diariodenoticias.app.utils.ApiKeyProvider.ios.kt</ID>
+    <ID>NewLineAtEndOfFile:ApiKeyProvider.kt$com.ia.diariodenoticias.app.utils.ApiKeyProvider.kt</ID>
+    <ID>NewLineAtEndOfFile:Article.kt$com.ia.diariodenoticias.articles.usecase.Article.kt</ID>
+    <ID>NewLineAtEndOfFile:ArticleRaw.kt$com.ia.diariodenoticias.articles.data.model.ArticleRaw.kt</ID>
+    <ID>NewLineAtEndOfFile:ArticlesDataSource.kt$com.ia.diariodenoticias.articles.data.ArticlesDataSource.kt</ID>
+    <ID>NewLineAtEndOfFile:ArticlesDataSourceImpl.kt$com.ia.diariodenoticias.articles.data.impl.ArticlesDataSourceImpl.kt</ID>
+    <ID>NewLineAtEndOfFile:ArticlesIntegrationTest.kt$com.ia.diariodenoticias.articles.app.ArticlesIntegrationTest.kt</ID>
+    <ID>NewLineAtEndOfFile:ArticlesMapper.kt$com.ia.diariodenoticias.utils.ArticlesMapper.kt</ID>
+    <ID>NewLineAtEndOfFile:ArticlesModule.kt$com.ia.diariodenoticias.articles.presentation.di.ArticlesModule.kt</ID>
+    <ID>NewLineAtEndOfFile:ArticlesRepository.kt$com.ia.diariodenoticias.articles.data.ArticlesRepository.kt</ID>
+    <ID>NewLineAtEndOfFile:ArticlesRepositoryImpl.kt$com.ia.diariodenoticias.articles.data.impl.ArticlesRepositoryImpl.kt</ID>
+    <ID>NewLineAtEndOfFile:ArticlesRepositoryTest.kt$com.ia.diariodenoticias.articles.data.ArticlesRepositoryTest.kt</ID>
+    <ID>NewLineAtEndOfFile:ArticlesResponse.kt$com.ia.diariodenoticias.articles.data.model.ArticlesResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:ArticlesViewModel.kt$com.ia.diariodenoticias.articles.presentation.ArticlesViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:ArticlesViewModelTest.kt$com.ia.diariodenoticias.articles.presentation.ArticlesViewModelTest.kt</ID>
+    <ID>NewLineAtEndOfFile:BaseViewModel.kt$com.ia.diariodenoticias.app.BaseViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:DatabaseDriverFactory.kt$com.ia.diariodenoticias.app.db.DatabaseDriverFactory.kt</ID>
+    <ID>NewLineAtEndOfFile:DatabaseModule.kt$com.ia.diariodenoticias.di.DatabaseModule.kt</ID>
+    <ID>NewLineAtEndOfFile:GetArticlesUseCase.kt$com.ia.diariodenoticias.articles.usecase.GetArticlesUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:GetSourcesUseCase.kt$com.ia.diariodenoticias.sources.usecase.GetSourcesUseCase.kt</ID>
+    <ID>NewLineAtEndOfFile:Greeting.kt$com.ia.diariodenoticias.Greeting.kt</ID>
+    <ID>NewLineAtEndOfFile:JsonLoader.kt$com.ia.diariodenoticias.utils.JsonLoader.kt</ID>
+    <ID>NewLineAtEndOfFile:KoinInitializer.kt$com.ia.diariodenoticias.di.KoinInitializer.kt</ID>
+    <ID>NewLineAtEndOfFile:MockClient.kt$com.ia.diariodenoticias.utils.MockClient.kt</ID>
+    <ID>NewLineAtEndOfFile:MockResponse.kt$com.ia.diariodenoticias.utils.MockResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:NetworkModule.kt$com.ia.diariodenoticias.app.di.NetworkModule.kt</ID>
+    <ID>NewLineAtEndOfFile:NetworkUtils.kt$com.ia.diariodenoticias.utils.NetworkUtils.kt</ID>
+    <ID>NewLineAtEndOfFile:Platform.android.kt$com.ia.diariodenoticias.Platform.android.kt</ID>
+    <ID>NewLineAtEndOfFile:Platform.ios.kt$com.ia.diariodenoticias.Platform.ios.kt</ID>
+    <ID>NewLineAtEndOfFile:Platform.kt$com.ia.diariodenoticias.Platform.kt</ID>
+    <ID>NewLineAtEndOfFile:ResponseInterceptor.kt$com.ia.diariodenoticias.utils.ResponseInterceptor.kt</ID>
+    <ID>NewLineAtEndOfFile:SharedKoinModules.kt$com.ia.diariodenoticias.app.di.SharedKoinModules.kt</ID>
+    <ID>NewLineAtEndOfFile:Source.kt$com.ia.diariodenoticias.sources.usecase.Source.kt</ID>
+    <ID>NewLineAtEndOfFile:SourceRaw.kt$com.ia.diariodenoticias.sources.data.model.SourceRaw.kt</ID>
+    <ID>NewLineAtEndOfFile:SourcesDataSource.kt$com.ia.diariodenoticias.sources.data.SourcesDataSource.kt</ID>
+    <ID>NewLineAtEndOfFile:SourcesIntegrationTest.kt$com.ia.diariodenoticias.sources.app.SourcesIntegrationTest.kt</ID>
+    <ID>NewLineAtEndOfFile:SourcesMapper.kt$com.ia.diariodenoticias.utils.SourcesMapper.kt</ID>
+    <ID>NewLineAtEndOfFile:SourcesRepository.kt$com.ia.diariodenoticias.sources.data.SourcesRepository.kt</ID>
+    <ID>NewLineAtEndOfFile:SourcesRepositoryImpl.kt$com.ia.diariodenoticias.sources.data.impl.SourcesRepositoryImpl.kt</ID>
+    <ID>NewLineAtEndOfFile:SourcesRepositoryTest.kt$com.ia.diariodenoticias.sources.data.SourcesRepositoryTest.kt</ID>
+    <ID>NewLineAtEndOfFile:SourcesResponse.kt$com.ia.diariodenoticias.sources.data.model.SourcesResponse.kt</ID>
+    <ID>NewLineAtEndOfFile:SourcesViewModel.kt$com.ia.diariodenoticias.sources.presentation.SourcesViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:SourcesViewModelTest.kt$com.ia.diariodenoticias.sources.presentation.SourcesViewModelTest.kt</ID>
+    <ID>NewLineAtEndOfFile:Test.android.kt$com.ia.diariodenoticias.Test.android.kt</ID>
+    <ID>NewLineAtEndOfFile:Test.ios.kt$com.ia.diariodenoticias.Test.ios.kt</ID>
+    <ID>NewLineAtEndOfFile:Test.kt$com.ia.diariodenoticias.sources.Test.kt</ID>
+    <ID>NewLineAtEndOfFile:build.gradle.kts$.build.gradle.kts</ID>
+    <ID>NewLineAtEndOfFile:test.database.android.kt$com.ia.diariodenoticias.test.database.android.kt</ID>
+    <ID>NewLineAtEndOfFile:test.database.common.kt$com.ia.diariodenoticias.test.database.common.kt</ID>
+    <ID>NewLineAtEndOfFile:test.database.ios.kt$com.ia.diariodenoticias.test.database.ios.kt</ID>
+    <ID>NewLineAtEndOfFile:test.utils.kt$com.ia.diariodenoticias.test.utils.kt</ID>
+    <ID>NewLineAtEndOfFile:utils.ios.kt$com.ia.diariodenoticias.utils.ios.kt</ID>
+    <ID>ReturnCount:ArticlesRepositoryImpl.kt$ArticlesRepositoryImpl$override suspend fun getArticles(forceFetch: Boolean): List&lt;ArticleRaw&gt;</ID>
+    <ID>UnusedPrivateMember:ArticlesViewModelTest.kt$ArticlesViewModelTest$private fun mountListOfArticlesFinal()</ID>
+    <ID>UnusedPrivateMember:SourcesRepositoryTest.kt$SourcesRepositoryTest$private fun mountListOfSourcesFinal()</ID>
+    <ID>UnusedPrivateMember:SourcesRepositoryTest.kt$SourcesRepositoryTest$private fun mountListOfSourcesForCheck()</ID>
+    <ID>UnusedPrivateMember:SourcesViewModelTest.kt$SourcesViewModelTest$private fun mountListOfSourcesFinal()</ID>
+    <ID>WildcardImport:ArticlesRepositoryTest.kt$import io.ktor.client.plugins.contentnegotiation.*</ID>
+    <ID>WildcardImport:ArticlesRepositoryTest.kt$import io.ktor.client.plugins.cookies.*</ID>
+    <ID>WildcardImport:ArticlesRepositoryTest.kt$import io.ktor.client.request.*</ID>
+    <ID>WildcardImport:ArticlesRepositoryTest.kt$import io.ktor.serialization.kotlinx.json.*</ID>
+    <ID>WildcardImport:ArticlesRepositoryTest.kt$import io.ktor.server.application.*</ID>
+    <ID>WildcardImport:ArticlesRepositoryTest.kt$import io.ktor.server.config.*</ID>
+    <ID>WildcardImport:ArticlesRepositoryTest.kt$import io.ktor.server.response.*</ID>
+    <ID>WildcardImport:ArticlesRepositoryTest.kt$import io.ktor.server.routing.*</ID>
+    <ID>WildcardImport:ArticlesViewModelTest.kt$import io.ktor.client.plugins.contentnegotiation.*</ID>
+    <ID>WildcardImport:ArticlesViewModelTest.kt$import io.ktor.client.plugins.cookies.*</ID>
+    <ID>WildcardImport:ArticlesViewModelTest.kt$import io.ktor.client.request.*</ID>
+    <ID>WildcardImport:ArticlesViewModelTest.kt$import io.ktor.serialization.kotlinx.json.*</ID>
+    <ID>WildcardImport:ArticlesViewModelTest.kt$import io.ktor.server.application.*</ID>
+    <ID>WildcardImport:ArticlesViewModelTest.kt$import io.ktor.server.config.*</ID>
+    <ID>WildcardImport:ArticlesViewModelTest.kt$import io.ktor.server.response.*</ID>
+    <ID>WildcardImport:ArticlesViewModelTest.kt$import io.ktor.server.routing.*</ID>
+    <ID>WildcardImport:SourcesRepositoryTest.kt$import io.ktor.client.plugins.contentnegotiation.*</ID>
+    <ID>WildcardImport:SourcesRepositoryTest.kt$import io.ktor.client.plugins.cookies.*</ID>
+    <ID>WildcardImport:SourcesRepositoryTest.kt$import io.ktor.client.request.*</ID>
+    <ID>WildcardImport:SourcesRepositoryTest.kt$import io.ktor.serialization.kotlinx.json.*</ID>
+    <ID>WildcardImport:SourcesRepositoryTest.kt$import io.ktor.server.application.*</ID>
+    <ID>WildcardImport:SourcesRepositoryTest.kt$import io.ktor.server.config.*</ID>
+    <ID>WildcardImport:SourcesRepositoryTest.kt$import io.ktor.server.response.*</ID>
+    <ID>WildcardImport:SourcesRepositoryTest.kt$import io.ktor.server.routing.*</ID>
+    <ID>WildcardImport:SourcesViewModelTest.kt$import io.ktor.client.plugins.contentnegotiation.*</ID>
+    <ID>WildcardImport:SourcesViewModelTest.kt$import io.ktor.client.plugins.cookies.*</ID>
+    <ID>WildcardImport:SourcesViewModelTest.kt$import io.ktor.client.request.*</ID>
+    <ID>WildcardImport:SourcesViewModelTest.kt$import io.ktor.serialization.kotlinx.json.*</ID>
+    <ID>WildcardImport:SourcesViewModelTest.kt$import io.ktor.server.application.*</ID>
+    <ID>WildcardImport:SourcesViewModelTest.kt$import io.ktor.server.config.*</ID>
+    <ID>WildcardImport:SourcesViewModelTest.kt$import io.ktor.server.response.*</ID>
+    <ID>WildcardImport:SourcesViewModelTest.kt$import io.ktor.server.routing.*</ID>
+  </CurrentIssues>
+</SmellBaseline>

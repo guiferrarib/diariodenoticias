@@ -19,7 +19,7 @@ val sourcesModule = module {
 
     single<SourcesService> { SourcesService(get()) }
     single<GetSourcesUseCase> { GetSourcesUseCase(get()) }
-    single<SourcesDataSource> { SourcesDataSourceImpl(get()) }
-    single<SourcesRepository> { SourcesRepositoryImpl(get(), get()) }
+    single<SourcesDataSource> { SourcesDataSourceImpl(get(), get()) }
+    single<SourcesRepository> { SourcesRepositoryImpl(get()) }
     single<SourcesViewModel> { SourcesViewModel(get()) }
 }

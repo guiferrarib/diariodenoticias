@@ -14,10 +14,11 @@ import org.koin.dsl.module
  *
  * Autor: Guilherme Ferrari Bréscia
  */
+
 val articlesModule = module {
     single { ArticlesService(get()) }
-    single<ArticlesDataSource> { ArticlesDataSourceImpl(get()) }
-    single<ArticlesRepository> { ArticlesRepositoryImpl(get(), get()) }
+    single<ArticlesDataSource> { ArticlesDataSourceImpl(get(),get()) }
+    single<ArticlesRepository> { ArticlesRepositoryImpl(get()) }
     single { GetArticlesUseCase(get()) }
     single { ArticlesViewModel(get()) }
 }

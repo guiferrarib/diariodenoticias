@@ -1,6 +1,5 @@
 package com.ia.diariodenoticias.articles.data.model
 
-import com.ia.diariodenoticias.articles.data.model.ArticleRaw
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 /**

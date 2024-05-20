@@ -2,6 +2,7 @@ package com.ia.diariodenoticias.articles.data.impl
 
 import com.ia.diariodenoticias.articles.data.model.ArticleRaw
 import com.ia.diariodenoticias.articles.data.ArticlesDataSource
+import com.ia.diariodenoticias.articles.data.service.ArticlesService
 import com.ia.diariodenoticias.db.DiarioDeNoticiasDatabase
 /**
  * Copyright (c) 2024
@@ -10,7 +11,10 @@ import com.ia.diariodenoticias.db.DiarioDeNoticiasDatabase
  * Autor: Guilherme Ferrari Bréscia
  */
 
-class ArticlesDataSourceImpl(private val database: DiarioDeNoticiasDatabase) : ArticlesDataSource {
+class ArticlesDataSourceImpl(
+    private val database: DiarioDeNoticiasDatabase,
+    private val service: ArticlesService
+) : ArticlesDataSource {
 
     override fun getAllArticles(): List<ArticleRaw> =
         database.diarioDeNoticiasDatabaseQueries.selectAllArticles(::mapToArticleRaw).executeAsList()
@@ -35,7 +39,13 @@ class ArticlesDataSourceImpl(private val database: DiarioDeNoticiasDatabase) : A
         )
     }
 
-    private fun mapToArticleRaw(
+    override suspend fun fetchArticles(): List<ArticleRaw> {
+        val fetchedArticles = service.fetchArticles()
+        insertArticles(fetchedArticles)
+        return fetchedArticles
+    }
+
+    override fun mapToArticleRaw(
         title: String,
         desc: String?,
         date: String,

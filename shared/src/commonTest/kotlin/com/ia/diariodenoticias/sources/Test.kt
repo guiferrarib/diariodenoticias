@@ -1,5 +1,6 @@
-package com.ia.diariodenoticias
+package com.ia.diariodenoticias.sources
 
+import com.ia.diariodenoticias.Greeting
 import kotlin.test.Test
 import kotlin.test.assertTrue
 

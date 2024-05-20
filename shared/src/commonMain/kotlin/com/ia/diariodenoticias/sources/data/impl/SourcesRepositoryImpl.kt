@@ -12,15 +12,14 @@ import com.ia.diariodenoticias.sources.data.service.SourcesService
  */
 
 class SourcesRepositoryImpl(
-    private val dataSource: SourcesDataSource,
-    private val service: SourcesService
+    private val dataSource: SourcesDataSource
 ) : SourcesRepository {
 
     override suspend fun getAllSources(): List<SourceRaw> {
         val sourcesDb = dataSource.getAllSources()
         if (sourcesDb.isEmpty()) {
             dataSource.clearSources()
-            val fetchedSources = service.fetchSources()
+            val fetchedSources = dataSource.fetchSources()
             dataSource.createSources(fetchedSources)
             return fetchedSources
         }

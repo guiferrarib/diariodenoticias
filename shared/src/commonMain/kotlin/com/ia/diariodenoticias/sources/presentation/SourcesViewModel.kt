@@ -22,7 +22,7 @@ class SourcesViewModel(private val useCase: GetSourcesUseCase) : BaseViewModel()
         getSources()
     }
 
-    private fun getSources() {
+    fun getSources() {
         scope.launch {
             _sourcesState.emit(SourcesState(_sourcesState.value.sources, true, null))
 

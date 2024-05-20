@@ -50,5 +50,6 @@ dependencies {
     implementation(libs.koin.androidx.compose)
     implementation (libs.accompanist.swiperefresh)
     implementation(libs.compose.material)
+    testImplementation(libs.sql.sqlite.driver)
     debugImplementation(libs.compose.ui.tooling)
 }

@@ -3,6 +3,8 @@ package com.ia.diariodenoticias.sources.data.impl
 import com.ia.diariodenoticias.db.DiarioDeNoticiasDatabase
 import com.ia.diariodenoticias.sources.data.SourcesDataSource
 import com.ia.diariodenoticias.sources.data.model.SourceRaw
+import com.ia.diariodenoticias.sources.data.service.SourcesService
+
 /**
  * Copyright (c) 2024
  * Todos os direitos reservados.
@@ -10,7 +12,10 @@ import com.ia.diariodenoticias.sources.data.model.SourceRaw
  * Autor: Guilherme Ferrari Bréscia
  */
 
-class SourcesDataSourceImpl(private val db: DiarioDeNoticiasDatabase) : SourcesDataSource {
+class SourcesDataSourceImpl(
+    private val db: DiarioDeNoticiasDatabase,
+    private val service: SourcesService
+) : SourcesDataSource {
 
     override fun getAllSources(): List<SourceRaw> =
         db.diarioDeNoticiasDatabaseQueries.selectAllSources(::mapSource).executeAsList()
@@ -51,4 +56,7 @@ class SourcesDataSourceImpl(private val db: DiarioDeNoticiasDatabase) : SourcesD
             source.country,
         )
     }
+
+    override suspend fun fetchSources(): List<SourceRaw> = service.fetchSources()
+
 }

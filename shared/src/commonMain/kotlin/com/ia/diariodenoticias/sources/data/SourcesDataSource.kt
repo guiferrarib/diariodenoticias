@@ -17,6 +17,8 @@ interface SourcesDataSource {
     fun createSources(sources: List<SourceRaw>)
     fun insertSource(source: SourceRaw)
 
+    suspend fun fetchSources(): List<SourceRaw>
+
     fun mapSource(
         id: String,
         name: String,

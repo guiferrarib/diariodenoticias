@@ -12,29 +12,22 @@ import com.ia.diariodenoticias.articles.data.service.ArticlesService
  */
 
 class ArticlesRepositoryImpl(
-    private val dataSource: ArticlesDataSource,
-    private val service: ArticlesService
+    private val dataSource: ArticlesDataSource
 ) : ArticlesRepository {
 
     override suspend fun getArticles(forceFetch: Boolean): List<ArticleRaw> {
         if (forceFetch) {
             dataSource.clearArticles()
-            return fetchArticles()
+            return dataSource.fetchArticles()
         }
 
         val articlesDb = dataSource.getAllArticles()
         println("Got ${articlesDb.size} from the database!!")
 
         if (articlesDb.isEmpty()) {
-            return fetchArticles()
+            return dataSource.fetchArticles()
         }
 
         return articlesDb
-    }
-
-    override suspend fun fetchArticles(): List<ArticleRaw> {
-        val fetchedArticles = service.fetchArticles()
-        dataSource.insertArticles(fetchedArticles)
-        return fetchedArticles
     }
 }

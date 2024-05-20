@@ -11,6 +11,7 @@ import kotlinx.coroutines.launch
  *
  * Autor: Guilherme Ferrari Bréscia
  */
+
 class ArticlesViewModel(
     private val useCase: GetArticlesUseCase
 ) : BaseViewModel() {
@@ -33,4 +34,7 @@ class ArticlesViewModel(
             _articlesState.emit(ArticlesState(articles = fetchedArticles))
         }
     }
+
+
+
 }

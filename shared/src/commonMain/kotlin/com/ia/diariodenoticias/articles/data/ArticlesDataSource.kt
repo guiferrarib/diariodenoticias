@@ -8,6 +8,7 @@ import com.ia.diariodenoticias.articles.data.model.ArticleRaw
  *
  * Autor: Guilherme Ferrari Bréscia
  */
+
 interface ArticlesDataSource {
     fun getAllArticles(): List<ArticleRaw>
     fun insertArticles(articles: List<ArticleRaw>)
@@ -15,4 +16,7 @@ interface ArticlesDataSource {
     fun clearArticles()
 
     fun insertArticle(articleRaw: ArticleRaw)
+
+    suspend fun fetchArticles(): List<ArticleRaw>
+    fun mapToArticleRaw(title: String, desc: String?, date: String, url: String?): ArticleRaw
 }

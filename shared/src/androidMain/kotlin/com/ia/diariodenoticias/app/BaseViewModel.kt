@@ -2,6 +2,8 @@ package com.ia.diariodenoticias.app
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.ia.diariodenoticias.BuildConfig
+
 /**
  * Copyright (c) 2024
  * Todos os direitos reservados.

@@ -9,8 +9,6 @@ import com.ia.diariodenoticias.articles.data.model.ArticleRaw
  * Autor: Guilherme Ferrari Bréscia
  */
 interface ArticlesRepository {
-
     suspend fun getArticles(forceFetch: Boolean): List<ArticleRaw>
 
-    suspend fun fetchArticles(): List<ArticleRaw>
 }

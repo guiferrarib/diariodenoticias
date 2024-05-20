@@ -1,5 +1,8 @@
 package com.ia.diariodenoticias.sources.data.service
 
+
+
+import com.ia.diariodenoticias.app.utils.getApiKey
 import com.ia.diariodenoticias.sources.data.model.SourceRaw
 import com.ia.diariodenoticias.sources.data.model.SourcesResponse
 import io.ktor.client.HttpClient
@@ -13,11 +16,11 @@ import io.ktor.client.request.get
  */
 
 class SourcesService(private val httpClient: HttpClient) {
-    private val apiKey = "23c183a5a43c4637ab7be43476b0f10e"
+
     suspend fun fetchSources(): List<SourceRaw> {
 
         val response: SourcesResponse =
-            httpClient.get("https://newsapi.org/v2/top-headlines/sources?apiKey=$apiKey").body()
+            httpClient.get("https://newsapi.org/v2/top-headlines/sources?apiKey=${getApiKey()}").body()
         return response.sources
     }
 }
